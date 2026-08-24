@@ -263,8 +263,114 @@ public class pattern {
             }
             System.out.println();
         }
-
     }
+
+    public static void pattern19(){
+        int n = 5;
+
+        for (int i = 0; i < n; i++) {
+            // print 
+            for (int j = i; j < n; j++) {
+                System.out.print("*");
+            }
+            //space 
+            for(int l = 0 ; l < i*2 ;l++){
+                System.out.print(" ");
+            }
+
+            //print
+            for (int k = i; k < n; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for (int i = 0; i < n; i++) {
+            // print 
+            for (int j = 0; j < i+1; j++) {
+                System.out.print("*");
+            }
+            //space 
+            for(int l = 0 ; l < (n-i-1)*2 ;l++){
+                System.out.print(" ");
+            }
+
+            //print
+            for (int k = 0; k < i+1; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern20(){
+        int n=5;
+        for (int i = 0; i < n; i++) {
+            // print 
+            for (int j = 0; j < i+1; j++) {
+                System.out.print("*");
+            }
+            //space 
+            for(int l = 0 ; l < (n-i-1)*2 ;l++){
+                System.out.print(" ");
+            }
+
+            //print
+            for (int k = 0; k < i+1; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for (int i = 1; i < n; i++) {
+            // print 
+            for (int j = i; j < n; j++) {
+                System.out.print("*");
+            }
+            //space 
+            for(int l = 0 ; l < i*2 ;l++){
+                System.out.print(" ");
+            }
+
+            //print
+            for (int k = i; k < n; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern21(){
+        int n = 4;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if(i==0 || j == 0 || i == n-1 || j == n-1){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+             System.out.println();
+        }
+    }
+
+    public static void pattern22(){
+        
+        int n = 4;
+
+        for (int i = 0; i < n*2-1; i++) {
+            for (int j = 0; j < n*2-1; j++) {
+            int bottom = n*2-2 - i; 
+            int right = n*2-2 - j;
+            int min1 = Math.min(i, j);
+            int min2 = Math.min(bottom, right);
+            int min = Math.min(min1, min2);
+            System.out.print(n-min);
+            }
+            System.out.println();
+        }
+    }
+
 
     public static void main(String[] args) {
         //pattern1();
@@ -284,7 +390,10 @@ public class pattern {
         //pattern15();
         //pattern16();
         //pattern17();
-        pattern18();
-
+        //pattern18();
+        //pattern19();
+        //pattern20();
+        //pattern21();
+        //pattern22();
     }
 }
