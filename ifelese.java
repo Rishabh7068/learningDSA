@@ -11,5 +11,6 @@ public class ifelese {
         }else{
             System.out.println("i am not 5 or 10");
         }
+        sc.close();
     }   
 }

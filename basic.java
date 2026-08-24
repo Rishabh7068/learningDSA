@@ -7,5 +7,6 @@ class basic{
         int n = sc.nextInt();
 
         System.out.println("Hello World " + n);
+        sc.close();
     }
 }
