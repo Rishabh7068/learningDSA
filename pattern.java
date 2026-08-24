@@ -24,7 +24,7 @@ public class pattern {
     public static void pattern3(){
         int n =5;
 
-        for(int i =0 ; i<5 ; i++){
+        for(int i =0 ; i<n ; i++){
             for(int j=1; j<=i+1; j++){
                 System.out.print(j);
             }
@@ -154,6 +154,117 @@ public class pattern {
         }
     }
 
+    public static void pattern11(){
+     int n = 5;
+
+     for (int i = 0; i < n; i++) {
+        for (int k = 0; k < i+1; k++) {
+            if((i+k)%2==0){
+                System.out.print("1");
+            }else{
+                System.out.print("0");
+            }
+        }
+        System.out.println();   
+     }
+    }
+
+    public static void pattern12(){
+        int n = 4;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 1; j <= i+1; j++) {
+                System.out.print(j);
+            }
+
+            for (int k = 0; k < (n-i-1)*2; k++) {
+                System.out.print(" ");
+            }
+
+            for (int l = i+1 ; l > 0; l--) {
+                System.out.print(l);
+            }
+            System.out.println();
+        }
+
+    }
+
+    public static void pattern13(){
+        int n=5;
+        int temp =1;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i+1; j++) {
+                System.out.print(temp);
+                System.out.print(" ");
+                temp++;
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern14(){
+        int n = 5;
+        char ch = 'A';
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i+1; j++) {
+                System.out.print(((char)(ch+j)));
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern15(){
+        int n = 5;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n-i; j++) {
+                System.out.print(((char)('A'+j)));
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern16(){
+        int n = 5;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i+1; j++) {
+                System.out.print(((char)('A'+i)));
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern17(){
+        int n = 5;
+
+        for(int i = 0 ; i < n ; i++ ){
+            for (int j = 0; j < n-i-1 ; j++) {
+                System.out.print(" ");
+            }
+            int temp = -1;
+            for (int j = 0; j < i*2+1; j++) {
+                if(j < i+1){
+                    temp++;
+                    System.out.print((char)('A'+temp));
+                }else{
+                    temp--;
+                    System.out.print((char)('A'+temp));
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pattern18(){
+        int n = 5;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i+1; j++) {
+                System.out.print((char)(n-i+j+'A'-1));
+            }
+            System.out.println();
+        }
+
+    }
 
     public static void main(String[] args) {
         //pattern1();
@@ -165,7 +276,15 @@ public class pattern {
         //pattern7();
         //pattern8();
         //pattern9();
-        pattern10();
+        //pattern10();
+        //pattern11();
+        //pattern12();
+        //pattern13();
+        //pattern14();
+        //pattern15();
+        //pattern16();
+        //pattern17();
+        pattern18();
 
     }
 }
