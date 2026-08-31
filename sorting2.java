@@ -87,10 +87,7 @@ public class sorting2 {
         if(st > en){
             return;
         }
-
-
         
-        // rotate around pivot
         int i = st;
         int j = st;
 
